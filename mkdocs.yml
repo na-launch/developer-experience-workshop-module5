@@ -1,0 +1,9 @@
+site_name: Module 5
+site_description: Using Red Hat build of OpenTelemetry with Micrometer
+
+nav:
+  - Overview: index.md
+  - More Details: more-details.md
+
+plugins:
+  - techdocs-core

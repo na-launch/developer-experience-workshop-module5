@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: workshop-module5
+  title: Module 5
+  description: |
+    Using Red Hat build of OpenTelemetry with Micrometer
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - opentelemetry
+    - micrometer
+  links:
+    - url: https://devspaces.apps.<cluster-domain>/#https://gitlab.apps.<cluster-domain>/developers/developer-experience-workshop-module5.git
+      title: "Launch from Dev Spaces"
+      icon: web
+spec:
+  type: module
+  lifecycle: production
+  owner: group:default/cluster-admins
+  gitlab:
+    remoteUrl: https://gitlab.apps.<cluster-domain>/developers/developer-experience-workshop-module5.git
+    owner: developers
+    repository: workshop-repository
+    branch: main
+  subcomponentOf: component:default/workshop-repository
+  dependsOn:
+    - component:default/workshop-agenda
