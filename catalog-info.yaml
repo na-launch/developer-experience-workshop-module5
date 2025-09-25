@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: workshop-module5
-  title: Module 5
+  name: workshop-module5-java
+  title: Module 5 - Java
   description: |
     Using Red Hat build of OpenTelemetry with Micrometer
   annotations:
@@ -15,5 +15,3 @@ spec:
   lifecycle: production
   owner: group:default/cluster-admins
   subcomponentOf: component:default/workshop-repository
-  dependsOn:
-    - component:default/workshop-agenda
